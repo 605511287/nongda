@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+<style>
+	.box{
+		width: 200px;
+		height: 200px;
+		border: 50px solid red ;
+		animation: border 1s ease-in,color 1s ease-in,radius 1s ease-in,rotate 1s ease-in ;
+		animation-iteration-count: infinite;
+		margin:  0 auto;
+	}
+	
+	@keyframes border{
+		0%{
+
+		}
+		100%{
+			border-width: 100px;
+		}
+	}
+	@keyframes color{
+		0%{
+
+		}
+		100%{
+			border-color: blue;
+		}
+	}
+	@keyframes radius{
+		0%{
+
+		}
+		100%{
+			border-radius: 50%;
+		}
+	}
+	@keyframes rotate{
+	  0%{
+
+	  }
+	  100%{
+	  	transform: rotate(360deg);
+	  }
+	}
+</style>
+</html>
